@@ -14,4 +14,8 @@ Ce projet implémente une architecture **microservices** pour gérer la modifica
 1. **Cloner le projet**  
    ```bash
    git clone https://github.com/TendryOne/ESTI---EXAMEN-SOA-et-MICROSERVICES.git
+   ```
+   ** acceder au porjet **
+   ``` bash
    cd ESTI---EXAMEN-SOA-et-MICROSERVICES
+   ```
