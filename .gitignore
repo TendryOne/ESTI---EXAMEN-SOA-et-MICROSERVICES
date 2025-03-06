@@ -3,3 +3,4 @@
 /microservices/BeneficiaryServices/node_modules
 /microservices/EmployeeServices/node_modules
 /microservices/Gateway/node_modules
+/microservices/NotificationServices/node_modules

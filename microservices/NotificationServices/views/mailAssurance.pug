@@ -1,0 +1,53 @@
+doctype html
+html(lang="fr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Confirmation de changement de bénéficiaire
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333333;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #555555;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #888888;
+        font-size: 14px;
+      }
+  body
+    .container
+      h1 Confirmation de changement de bénéficiaire
+      p Bonjour l'équipe de l'assurance,
+      p Nous vous informons que le bénéficiaire pour l'employé suivant a été modifié :
+      ul
+        li
+          strong Numéro d'employé : 
+          | #{data.numeroEmploye}
+        li
+          strong Nouveau bénéficiaire : 
+          | #{data.nomBeneficiaire}
+      p Cordialement,
+      p L'équipe de gestion des bénéficiaires
+      .footer
+        p Ceci est un message automatique, merci de ne pas y répondre.

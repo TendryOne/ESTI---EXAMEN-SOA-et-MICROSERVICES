@@ -22,19 +22,22 @@
 
     <div class="beneficiary-form">
       <h2>Modifier le bénéficiaire</h2>
-      <Form @submit="onSubmit" :validation-schema="schema">
+      <Form @submit="onSubmit" :validation-schema="schema" v-slot="{ isSubmitting }">
         <div class="form-group">
           <label for="beneficiaryName">Nom du bénéficiaire</label>
           <Field name="beneficiaryName" type="text" v-model="beneficiaryName" />
           <ErrorMessage name="beneficiaryName" class="error-message" />
         </div>
-        <button type="submit" class="submit-button">Valider</button>
+        <button type="submit" class="submit-button" :class="isSubmitting ? 'gris' : ''">
+          {{ isSubmitting ? 'Validation en cours' : 'Valider' }}</button>
       </Form>
     </div>
 
     <div v-if="showModal" class="modal-overlay">
       <div class="modal">
         <p>Mise à jour du bénéficiaire réussie !</p>
+        <p>Mail envoyee au client</p>
+        <p>Mail envoyee a l'assurance</p>
         <button @click="closeModal">Fermer</button>
       </div>
     </div>
@@ -170,6 +173,11 @@ const closeModal = () => {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.submit-button.gris {
+  background-color: rgba(128, 128, 128, 0.253);
+  pointer-events: none;
 }
 
 .submit-button:hover {
