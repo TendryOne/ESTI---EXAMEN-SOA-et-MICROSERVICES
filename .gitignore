@@ -1,0 +1,5 @@
+/front/node_modules
+/microservices/AuthServices/node_modules
+/microservices/BeneficiaryServices/node_modules
+/microservices/EmployeeServices/node_modules
+/microservices/Gateway/node_modules
