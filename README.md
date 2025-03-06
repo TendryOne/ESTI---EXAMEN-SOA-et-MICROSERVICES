@@ -1,4 +1,4 @@
-# 📌 Projet BPM - Microservices
+# 📌 Projet BPM 1 - Microservices - Modification du beneficiaire d'assurances sociale
 
 ## 🚀 Description
 Ce projet implémente une architecture **microservices** en utilisant :
